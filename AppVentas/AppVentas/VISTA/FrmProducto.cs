@@ -17,6 +17,7 @@ namespace AppVentas.VISTA
         public FrmProducto()
         {
             InitializeComponent();
+            Carga();
         }
         void Carga()
         {
@@ -99,6 +100,22 @@ namespace AppVentas.VISTA
             txtNombreProducto.Text = nombre;
             txtPrecioProducto.Text = precio;
             txtEstadoProducto.Text = estado;
+        }
+
+        private void pictureBox6_Click(object sender, EventArgs e)
+        {
+
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Maximized;
+        }
+
+        private void pictureBox5_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

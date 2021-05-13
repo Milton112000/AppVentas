@@ -180,6 +180,7 @@ namespace AppVentas.VISTA
             this.ClientSize = new System.Drawing.Size(959, 566);
             this.Controls.Add(this.panel3);
             this.Name = "FrmDocumeto";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmDocumeto";
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();

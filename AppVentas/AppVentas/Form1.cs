@@ -46,6 +46,12 @@ namespace AppVentas
         {
             
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+            FrmRegistrarse regis = new FrmRegistrarse();
+            regis.Show();
+        }
     }
     }
 

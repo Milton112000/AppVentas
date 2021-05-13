@@ -99,5 +99,25 @@ namespace AppVentas.VISTA
                 MessageBox.Show("Ha ocurrido un error: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtPasworkUsuario_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtEmailUsuario_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -122,6 +122,12 @@
     <Compile Include="VISTA\FrmProducto.Designer.cs">
       <DependentUpon>FrmProducto.cs</DependentUpon>
     </Compile>
+    <Compile Include="VISTA\FrmRegistrarse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VISTA\FrmRegistrarse.Designer.cs">
+      <DependentUpon>FrmRegistrarse.cs</DependentUpon>
+    </Compile>
     <Compile Include="VISTA\FrmUsuario.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -160,6 +166,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="VISTA\FrmProducto.resx">
       <DependentUpon>FrmProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VISTA\FrmRegistrarse.resx">
+      <DependentUpon>FrmRegistrarse.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="VISTA\FrmUsuario.resx">
       <DependentUpon>FrmUsuario.cs</DependentUpon>

@@ -104,6 +104,7 @@ namespace AppVentas.VISTA
             this.label3.Size = new System.Drawing.Size(79, 17);
             this.label3.TabIndex = 10;
             this.label3.Text = "contraseña";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label2
             // 
@@ -113,6 +114,7 @@ namespace AppVentas.VISTA
             this.label2.Size = new System.Drawing.Size(41, 17);
             this.label2.TabIndex = 9;
             this.label2.Text = "email";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label1
             // 
@@ -155,6 +157,7 @@ namespace AppVentas.VISTA
             this.txtPasworkUsuario.Size = new System.Drawing.Size(228, 22);
             this.txtPasworkUsuario.TabIndex = 2;
             this.txtPasworkUsuario.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtPasworkUsuario.TextChanged += new System.EventHandler(this.txtPasworkUsuario_TextChanged);
             // 
             // txtEmailUsuario
             // 
@@ -164,6 +167,7 @@ namespace AppVentas.VISTA
             this.txtEmailUsuario.Size = new System.Drawing.Size(228, 22);
             this.txtEmailUsuario.TabIndex = 1;
             this.txtEmailUsuario.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtEmailUsuario.TextChanged += new System.EventHandler(this.txtEmailUsuario_TextChanged);
             // 
             // dataGridView1
             // 
@@ -210,6 +214,7 @@ namespace AppVentas.VISTA
             this.ClientSize = new System.Drawing.Size(959, 566);
             this.Controls.Add(this.panel3);
             this.Name = "FrmUsuario";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmUsuario";
             this.Load += new System.EventHandler(this.FrmUsuario_Load);
             this.panel3.ResumeLayout(false);

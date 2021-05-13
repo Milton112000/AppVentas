@@ -94,5 +94,11 @@ namespace AppVentas.VISTA
             FrmUsuario usuario = new FrmUsuario();
             usuario.Show();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            FrmVentas ventas = new FrmVentas();
+            ventas.Show();
+        }
     }
 }

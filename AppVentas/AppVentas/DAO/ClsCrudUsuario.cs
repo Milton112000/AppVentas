@@ -1,4 +1,5 @@
-﻿using AppVentas.Model;
+﻿
+using AppVentas.Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
