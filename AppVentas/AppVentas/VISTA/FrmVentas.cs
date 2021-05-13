@@ -20,7 +20,7 @@ namespace AppVentas.VISTA
 
         private void FrmVentas_Load(object sender, EventArgs e)
         {
-            using (sistema_ventasEntities db= new sistema_ventasEntities())
+            using (sistema_ventasEntities  db= new sistema_ventasEntities())
             {
                 var consultaCliente = db.tb_cliente.ToList();
 

@@ -10,27 +10,22 @@ namespace AppVentas.DAO
     class ClsAcceso
     {
 
-        public int acceso(String usuario, String paswork) 
+        public int Acceso(string usuario, string pass)
         {
-            int variabledeAcceso = 0;
-            using (sistema_ventasEntities db = new sistema_ventasEntities())  
+            int variableAcceso = 0;
+            using (sistema_ventasEntities bd = new sistema_ventasEntities())
             {
-                var consulta = from user in db.tb_usuario
-                               where user.email == usuario && user.contrasena == paswork
+                var consulta = from user in bd.tb_usuario
+                               where user.email == usuario && user.contrasena == pass
+
                                select user;
 
-                if (consulta.Count()>0) 
+                if (consulta.Count() > 0)
                 {
-                    variabledeAcceso = 1;
+                    variableAcceso = 1;
                 }
-
-
-
-            
             }
-
-
-                return variabledeAcceso;
+            return variableAcceso;
         }
 
 
