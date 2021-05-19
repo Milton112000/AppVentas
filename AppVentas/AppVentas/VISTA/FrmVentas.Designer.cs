@@ -39,10 +39,10 @@ namespace AppVentas.VISTA
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.txtCodigoProducto = new System.Windows.Forms.TextBox();
+            this.txtNombreProducto = new System.Windows.Forms.TextBox();
+            this.txtPrecioProducto = new System.Windows.Forms.TextBox();
+            this.txtCantidad = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -134,34 +134,35 @@ namespace AppVentas.VISTA
             this.button1.TabIndex = 9;
             this.button1.Text = "Buscar";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // textBox3
+            // txtCodigoProducto
             // 
-            this.textBox3.Location = new System.Drawing.Point(64, 222);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 22);
-            this.textBox3.TabIndex = 10;
+            this.txtCodigoProducto.Location = new System.Drawing.Point(64, 222);
+            this.txtCodigoProducto.Name = "txtCodigoProducto";
+            this.txtCodigoProducto.Size = new System.Drawing.Size(140, 22);
+            this.txtCodigoProducto.TabIndex = 10;
             // 
-            // textBox4
+            // txtNombreProducto
             // 
-            this.textBox4.Location = new System.Drawing.Point(247, 222);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 22);
-            this.textBox4.TabIndex = 11;
+            this.txtNombreProducto.Location = new System.Drawing.Point(250, 222);
+            this.txtNombreProducto.Name = "txtNombreProducto";
+            this.txtNombreProducto.Size = new System.Drawing.Size(120, 22);
+            this.txtNombreProducto.TabIndex = 11;
             // 
-            // textBox5
+            // txtPrecioProducto
             // 
-            this.textBox5.Location = new System.Drawing.Point(434, 222);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(100, 22);
-            this.textBox5.TabIndex = 12;
+            this.txtPrecioProducto.Location = new System.Drawing.Point(434, 222);
+            this.txtPrecioProducto.Name = "txtPrecioProducto";
+            this.txtPrecioProducto.Size = new System.Drawing.Size(119, 22);
+            this.txtPrecioProducto.TabIndex = 12;
             // 
-            // textBox6
+            // txtCantidad
             // 
-            this.textBox6.Location = new System.Drawing.Point(632, 222);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(100, 22);
-            this.textBox6.TabIndex = 13;
+            this.txtCantidad.Location = new System.Drawing.Point(632, 222);
+            this.txtCantidad.Name = "txtCantidad";
+            this.txtCantidad.Size = new System.Drawing.Size(100, 22);
+            this.txtCantidad.TabIndex = 13;
             // 
             // label5
             // 
@@ -208,10 +209,10 @@ namespace AppVentas.VISTA
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.txtCantidad);
+            this.Controls.Add(this.txtPrecioProducto);
+            this.Controls.Add(this.txtNombreProducto);
+            this.Controls.Add(this.txtCodigoProducto);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.textBox2);
@@ -243,13 +244,13 @@ namespace AppVentas.VISTA
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox txtCantidad;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
+        public System.Windows.Forms.TextBox txtCodigoProducto;
+        public System.Windows.Forms.TextBox txtNombreProducto;
+        public System.Windows.Forms.TextBox txtPrecioProducto;
     }
 }

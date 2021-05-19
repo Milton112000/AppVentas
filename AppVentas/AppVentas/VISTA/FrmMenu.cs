@@ -20,6 +20,8 @@ namespace AppVentas.VISTA
             this.StartPosition = FormStartPosition.CenterScreen;
            
         }
+        public int contadorDocumento=0;
+        public int contadorBtnProducto = 0;
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
@@ -38,6 +40,7 @@ namespace AppVentas.VISTA
 
         private void FrmMenu_Load(object sender, EventArgs e)
         {
+          
             
         }
 
@@ -54,8 +57,15 @@ namespace AppVentas.VISTA
 
         private void pictureBox5_Click(object sender, EventArgs e)
         {
+            contadorBtnProducto++;
+
             FrmProducto producto = new FrmProducto();
             producto.Show();
+            if (contadorBtnProducto == 1)
+            {
+                lblLetrero.ForeColor = Color.Red;
+
+            }
         }
 
         private void pictureBox6_Click(object sender, EventArgs e)
@@ -66,6 +76,13 @@ namespace AppVentas.VISTA
 
         private void pictureBox7_Click(object sender, EventArgs e)
         {
+            contadorDocumento++;
+            if (contadorDocumento==1) 
+            
+            {
+                lblLetrero.ForeColor = Color.Blue;
+            }
+
             FrmDocumeto documeto = new FrmDocumeto();
             documeto.Show();
 
@@ -98,6 +115,14 @@ namespace AppVentas.VISTA
         private void button1_Click(object sender, EventArgs e)
         {
             FrmVentas ventas = new FrmVentas();
+            ventas.Show();
+        }
+
+        public static FrmVentas ventas = new FrmVentas();
+
+
+        private void abrirToolStripMenuItem_Click(object sender, EventArgs e)
+        {
             ventas.Show();
         }
     }

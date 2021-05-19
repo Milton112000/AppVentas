@@ -1,4 +1,5 @@
-﻿using AppVentas.Model;
+﻿using AppVentas.DAO;
+using AppVentas.Model;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -20,29 +21,35 @@ namespace AppVentas.VISTA
 
         private void FrmVentas_Load(object sender, EventArgs e)
         {
-            using (sistema_ventasEntities  db= new sistema_ventasEntities())
-            {
-                var consultaCliente = db.tb_cliente.ToList();
 
-                CbxCliente.DataSource = consultaCliente;
+            ClsDcliente clsCliente = new ClsDcliente();
+
+                CbxCliente.DataSource = clsCliente.cargarComboCliente();
                 CbxCliente.DisplayMember = "NombreCliente ";
                 CbxCliente.ValueMember = "iDCliente";
 
 
-                var consultadocumento = db.tb_documento.ToList();
+            //var consultadocumento = db.tb_documento.ToList();
 
-                //var consultadocumento = (from documento in db.tb_documento
-                //                         select new
-                //                         {
+            //var consultadocumento = (from documento in db.tb_documento
+            //                         select new
+            //                         {
 
-                //                             documento.iDDocumento,
-                //                             documento.nombreDocumento
-                //                         }).ToList(); 
+            //                             documento.iDDocumento,
+            //                             documento.nombreDocumento
+            //                         }).ToList(); 
 
-                CbxTipoDocumento.DataSource = consultadocumento;
+                  ClsDdocumento clsDocumento = new ClsDdocumento();
+                CbxTipoDocumento.DataSource = clsDocumento.cargarComboDocumento();
                 CbxTipoDocumento.DisplayMember = "nombreDocumento ";
                 CbxTipoDocumento.ValueMember = "iDDocumento";
-            }
+            
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            FrmGestionarProducto gestionar = new FrmGestionarProducto();
+            gestionar.Show();
         }
     }
 }

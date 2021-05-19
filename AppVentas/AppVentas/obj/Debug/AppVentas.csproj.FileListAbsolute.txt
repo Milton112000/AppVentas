@@ -20,3 +20,4 @@ C:\Users\USUARIO\Documents\GitHub\AppVentas\AppVentas\AppVentas\obj\Debug\AppVen
 C:\Users\USUARIO\Documents\GitHub\AppVentas\AppVentas\AppVentas\obj\Debug\AppVentas.VISTA.FrmProducto.resources
 C:\Users\USUARIO\Documents\GitHub\AppVentas\AppVentas\AppVentas\obj\Debug\AppVentas.VISTA.FrmDocumeto.resources
 C:\Users\USUARIO\Documents\GitHub\AppVentas\AppVentas\AppVentas\obj\Debug\AppVentas.VISTA.FrmRegistrarse.resources
+C:\Users\USUARIO\Documents\GitHub\AppVentas\AppVentas\AppVentas\obj\Debug\AppVentas.VISTA.FrmGestionarProducto.resources

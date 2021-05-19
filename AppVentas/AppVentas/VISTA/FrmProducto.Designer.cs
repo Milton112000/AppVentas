@@ -29,6 +29,7 @@ namespace AppVentas.VISTA
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmProducto));
             this.panel3 = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -51,6 +52,7 @@ namespace AppVentas.VISTA
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -80,6 +82,7 @@ namespace AppVentas.VISTA
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(962, 469);
             this.panel3.TabIndex = 6;
+            this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
             // pictureBox2
             // 
@@ -87,7 +90,7 @@ namespace AppVentas.VISTA
             this.pictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(761, 374);
+            this.pictureBox2.Location = new System.Drawing.Point(760, 408);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(84, 50);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -101,7 +104,7 @@ namespace AppVentas.VISTA
             this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(761, 318);
+            this.pictureBox1.Location = new System.Drawing.Point(760, 352);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(84, 50);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -112,7 +115,7 @@ namespace AppVentas.VISTA
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(703, 194);
+            this.label4.Location = new System.Drawing.Point(702, 228);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(51, 17);
             this.label4.TabIndex = 11;
@@ -121,7 +124,7 @@ namespace AppVentas.VISTA
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(700, 142);
+            this.label3.Location = new System.Drawing.Point(699, 176);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(48, 17);
             this.label3.TabIndex = 10;
@@ -130,7 +133,7 @@ namespace AppVentas.VISTA
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(697, 88);
+            this.label2.Location = new System.Drawing.Point(696, 122);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(58, 17);
             this.label2.TabIndex = 9;
@@ -139,7 +142,7 @@ namespace AppVentas.VISTA
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(697, 31);
+            this.label1.Location = new System.Drawing.Point(696, 65);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(19, 17);
             this.label1.TabIndex = 8;
@@ -149,7 +152,7 @@ namespace AppVentas.VISTA
             // 
             this.txtId.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtId.Enabled = false;
-            this.txtId.Location = new System.Drawing.Point(697, 54);
+            this.txtId.Location = new System.Drawing.Point(696, 88);
             this.txtId.Name = "txtId";
             this.txtId.Size = new System.Drawing.Size(228, 22);
             this.txtId.TabIndex = 7;
@@ -161,7 +164,7 @@ namespace AppVentas.VISTA
             this.pictureBox4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pictureBox4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(761, 254);
+            this.pictureBox4.Location = new System.Drawing.Point(760, 288);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(84, 50);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -172,7 +175,7 @@ namespace AppVentas.VISTA
             // txtEstadoProducto
             // 
             this.txtEstadoProducto.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtEstadoProducto.Location = new System.Drawing.Point(697, 217);
+            this.txtEstadoProducto.Location = new System.Drawing.Point(696, 251);
             this.txtEstadoProducto.Name = "txtEstadoProducto";
             this.txtEstadoProducto.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.txtEstadoProducto.Size = new System.Drawing.Size(228, 22);
@@ -182,7 +185,7 @@ namespace AppVentas.VISTA
             // txtPrecioProducto
             // 
             this.txtPrecioProducto.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtPrecioProducto.Location = new System.Drawing.Point(697, 165);
+            this.txtPrecioProducto.Location = new System.Drawing.Point(696, 199);
             this.txtPrecioProducto.Name = "txtPrecioProducto";
             this.txtPrecioProducto.Size = new System.Drawing.Size(228, 22);
             this.txtPrecioProducto.TabIndex = 2;
@@ -191,7 +194,7 @@ namespace AppVentas.VISTA
             // txtNombreProducto
             // 
             this.txtNombreProducto.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtNombreProducto.Location = new System.Drawing.Point(697, 108);
+            this.txtNombreProducto.Location = new System.Drawing.Point(696, 142);
             this.txtNombreProducto.Name = "txtNombreProducto";
             this.txtNombreProducto.Size = new System.Drawing.Size(228, 22);
             this.txtNombreProducto.TabIndex = 1;
@@ -295,6 +298,12 @@ namespace AppVentas.VISTA
             this.pictureBox6.TabStop = false;
             this.pictureBox6.Click += new System.EventHandler(this.pictureBox6_Click);
             // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
+            // 
             // FrmProducto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -344,5 +353,6 @@ namespace AppVentas.VISTA
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.PictureBox pictureBox6;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
     }
 }
