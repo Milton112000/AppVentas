@@ -23,7 +23,7 @@ namespace AppVentas.VISTA
             var clsPro = new ClsDproducto();
             dataGridView1.Rows.Clear();
 
-            foreach (var lista in clsPro.cargarProducto(txtFiltro.Text)) 
+            foreach (var lista in clsPro.Cargarproducto(txtFiltro.Text)) 
             {
                 dataGridView1.Rows.Add(lista.idProducto,lista.nombreProducto,lista.precioProducto);
             
@@ -38,6 +38,15 @@ namespace AppVentas.VISTA
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
+
+
+
+
+            
+
+        }
+        void envio() 
+        {
             String id = dataGridView1.CurrentRow.Cells[0].Value.ToString();
             String nombre = dataGridView1.CurrentRow.Cells[1].Value.ToString();
             String precio = dataGridView1.CurrentRow.Cells[2].Value.ToString();
@@ -45,7 +54,28 @@ namespace AppVentas.VISTA
             FrmMenu.ventas.txtCodigoProducto.Text = id;
             FrmMenu.ventas.txtNombreProducto.Text = nombre;
             FrmMenu.ventas.txtPrecioProducto.Text = precio;
+            FrmMenu.ventas.txtCantidad.Focus();
             this.Close();
+
+        }
+
+        private void dataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            envio();
+        }
+
+        private void dataGridView1_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode==Keys.Enter)
+            
+            {
+                envio();
+
+            }
+        }
+
+        private void FrmGestionarProducto_Load(object sender, EventArgs e)
+        {
 
         }
     }

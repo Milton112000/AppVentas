@@ -109,6 +109,7 @@ namespace AppVentas.VISTA
         private void label3_Click(object sender, EventArgs e)
         {
             FrmUsuario usuario = new FrmUsuario();
+            
             usuario.Show();
         }
 
@@ -118,12 +119,14 @@ namespace AppVentas.VISTA
             ventas.Show();
         }
 
+
         public static FrmVentas ventas = new FrmVentas();
 
 
         private void abrirToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            ventas.Show();
+            
+         ventas.Show();
         }
     }
 }

@@ -35,8 +35,6 @@ namespace AppVentas.VISTA
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.frVentaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.abrirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel2 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
@@ -51,6 +49,8 @@ namespace AppVentas.VISTA
             this.lblCorreo = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.lblLetrero = new System.Windows.Forms.Label();
+            this.frVentaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.abrirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -73,9 +73,9 @@ namespace AppVentas.VISTA
             this.panel1.Controls.Add(this.pictureBox3);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.menuStrip1);
-            this.panel1.Location = new System.Drawing.Point(195, -1);
+            this.panel1.Location = new System.Drawing.Point(222, -1);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(865, 70);
+            this.panel1.Size = new System.Drawing.Size(874, 70);
             this.panel1.TabIndex = 0;
             // 
             // pictureBox2
@@ -123,24 +123,9 @@ namespace AppVentas.VISTA
             this.frVentaToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(861, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(870, 28);
             this.menuStrip1.TabIndex = 5;
             this.menuStrip1.Text = "menuStrip1";
-            // 
-            // frVentaToolStripMenuItem
-            // 
-            this.frVentaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.abrirToolStripMenuItem});
-            this.frVentaToolStripMenuItem.Name = "frVentaToolStripMenuItem";
-            this.frVentaToolStripMenuItem.Size = new System.Drawing.Size(72, 24);
-            this.frVentaToolStripMenuItem.Text = "FrVenta";
-            // 
-            // abrirToolStripMenuItem
-            // 
-            this.abrirToolStripMenuItem.Name = "abrirToolStripMenuItem";
-            this.abrirToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.abrirToolStripMenuItem.Text = "Abrir";
-            this.abrirToolStripMenuItem.Click += new System.EventHandler(this.abrirToolStripMenuItem_Click);
             // 
             // panel2
             // 
@@ -318,12 +303,26 @@ namespace AppVentas.VISTA
             this.lblLetrero.TabIndex = 5;
             this.lblLetrero.Text = "  APP \r\nVENTAS";
             // 
+            // frVentaToolStripMenuItem
+            // 
+            this.frVentaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.abrirToolStripMenuItem});
+            this.frVentaToolStripMenuItem.Name = "frVentaToolStripMenuItem";
+            this.frVentaToolStripMenuItem.Size = new System.Drawing.Size(72, 24);
+            this.frVentaToolStripMenuItem.Text = "FrVenta";
+            // 
+            // abrirToolStripMenuItem
+            // 
+            this.abrirToolStripMenuItem.Name = "abrirToolStripMenuItem";
+            this.abrirToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.abrirToolStripMenuItem.Text = "Abrir";
+            // 
             // FrmMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ClientSize = new System.Drawing.Size(1060, 582);
+            this.ClientSize = new System.Drawing.Size(1085, 582);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);

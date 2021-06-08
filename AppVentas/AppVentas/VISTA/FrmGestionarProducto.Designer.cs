@@ -60,6 +60,8 @@ namespace AppVentas.VISTA
             this.dataGridView1.Size = new System.Drawing.Size(672, 356);
             this.dataGridView1.TabIndex = 1;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
+            this.dataGridView1.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellDoubleClick);
+            this.dataGridView1.KeyDown += new System.Windows.Forms.KeyEventHandler(this.dataGridView1_KeyDown);
             // 
             // Column1
             // 
@@ -88,6 +90,7 @@ namespace AppVentas.VISTA
             this.Controls.Add(this.txtFiltro);
             this.Name = "FrmGestionarProducto";
             this.Text = "FrmGestionarProducto";
+            this.Load += new System.EventHandler(this.FrmGestionarProducto_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
